@@ -61,11 +61,11 @@ void maxSumOfNonAdjacentElements(vector<int> &arr, int index, int sum, int &maxi
         return;
     }
 
-    // IF EXCLUDING THE CURRENT ELEMENT
-    maxSumOfNonAdjacentElements(arr, index + 1, sum, maxi);
-
     // IF INCLUDING THE CURRENT ELEMENT
     maxSumOfNonAdjacentElements(arr, index + 2, sum + arr[index], maxi);
+
+    // IF EXCLUDING THE CURRENT ELEMENT
+    maxSumOfNonAdjacentElements(arr, index + 1, sum, maxi);
 }
 int main()
 {
