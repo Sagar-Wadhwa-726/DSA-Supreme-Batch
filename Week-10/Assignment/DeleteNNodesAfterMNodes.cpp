@@ -1,0 +1,1 @@
+// geeksforgeeks.org/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
