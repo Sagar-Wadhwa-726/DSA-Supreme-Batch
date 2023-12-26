@@ -1,6 +1,20 @@
 #include <iostream>
 #include <queue>
+#include <climits>
 using namespace std;
+class Node
+{
+public:
+    int data;
+    Node *left;
+    Node *right;
+    Node(int data)
+    {
+        this->data = data;
+        this->left = nullptr;
+        this->right = nullptr;
+    }
+};
 /*Function which returns the kth greatest element*/
 int getKthGreatestElement(int arr[], int &n, int &k)
 {
@@ -30,6 +44,24 @@ int getKthSmallestElement(int arr[], int &n, int &k)
         }
 
     return pq.top();
+}
+
+/*Function to check if a binary tree is a heap of not*/
+pair<bool, int> checkIfHeapOrNot(Node *&root)
+{
+    // base case
+    if (!root)
+        return {true, INT_MIN};
+    if (!root->left && !root->right)
+        return {true, root->data};
+
+    pair<bool, int> leftAns = checkIfHeapOrNot(root->left);
+    pair<bool, int> rightAns = checkIfHeapOrNot(root->right);
+
+    if (leftAns.first && rightAns.first && root->data > leftAns.second && root->data > rightAns.second)
+        return {true, root->data};
+    else
+        return {false, root->data};
 }
 int main()
 {
