@@ -31,8 +31,9 @@ int main()
     // printing the size of the map
     cout << "\n";
     cout << "Size of map is : " << mp.size();
-    cout << mp["hummer"];
+    cout << mp["hummer"]; // not present but now  an entry will be created so size of map increases by 1
     cout << "\n";
     cout << "Size of map is : " << mp.size();
+
     return 0;
 }
