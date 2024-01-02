@@ -4,6 +4,7 @@
     "algorithm": "cpp",
     "limits": "cpp",
     "utility": "cpp",
-    "new": "cpp"
+    "new": "cpp",
+    "cstring": "cpp"
   }
 }
