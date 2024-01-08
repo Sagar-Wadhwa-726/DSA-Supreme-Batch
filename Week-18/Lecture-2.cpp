@@ -14,5 +14,8 @@ int main()
 {
     system("cls");
 
+    // Q1: https://leetcode.com/problems/longest-common-subsequence/description/
+    // Q2: https://leetcode.com/problems/longest-palindromic-subsequence/
+    // Q3: https://leetcode.com/problems/edit-distance/
     return 0;
 }
