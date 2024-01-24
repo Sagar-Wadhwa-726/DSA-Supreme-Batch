@@ -1,5 +1,6 @@
 {
   "files.associations": {
+    "*.exe": "code-text-binary",
     "iostream": "cpp",
     "algorithm": "cpp",
     "limits": "cpp",
@@ -68,6 +69,7 @@
     "thread": "cpp",
     "typeindex": "cpp",
     "typeinfo": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "stack": "cpp"
   }
 }

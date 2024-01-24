@@ -13,7 +13,7 @@ public:
     void addEdge(T u, T v, bool isDirected)
     {
         adjList[u].push_back(v);
-        if (!isDirected)
+        if (isDirected)
             adjList[v].push_back(u);
     }
 

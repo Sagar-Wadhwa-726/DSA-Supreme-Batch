@@ -11,7 +11,7 @@ public:
     void addEdge(int u, int v, int weight, bool isDirected)
     {
         adjList[u].push_back({v, weight});
-        if (!isDirected)
+        if (isDirected)
             adjList[v].push_back({u, weight});
     }
 
